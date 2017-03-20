@@ -2,7 +2,6 @@ let HOST = 'http://xplay.dinghaoinfo.com/api/'
 // let HOST = 'http://192.168.1.129/';
 import axios from 'axios'
 export function RequestData(method, url, body, resolve, reject) {
-  body.credentials = 'include'
   axios({
     method: method,
     url: HOST + url,
@@ -10,7 +9,7 @@ export function RequestData(method, url, body, resolve, reject) {
       'Accept': 'application/json',
       'Content-Type': 'application/x-www-form-urlencoded'
     },
-    dataType: 'JSONP',
+    dataType:'JSONP',
     data: body
   }).then(function (response) {
     console.log(response)
@@ -41,7 +40,7 @@ export function PostRequestData(url, body, resolve, reject) {
       'Content-Type': 'application/x-www-form-urlencoded',
     },
     method: 'POST',
-    body: toQueryString(body),
+    body:  toQueryString(body),
   })
     .then((response) => {
       return response.json();
@@ -55,15 +54,12 @@ export function PostRequestData(url, body, resolve, reject) {
 }
 
 export function GetRequestData(url, body, resolve, reject) {
-  body.credentials = 'include';
-  fetch(HOST + url + '?' + toQueryString(body), {
+  console.log(HOST + url +'?'+ toQueryString(body));
+  fetch(HOST + url +'?'+ toQueryString(body), {
     method: 'GET',
-    mode: 'no-cors'
   }).then((response) => {
     return response.json();
   }).then((responseData) => {
-    alert(responseData);
-
     resolve(responseData);
   }).catch((error) => {
     reject(error);
