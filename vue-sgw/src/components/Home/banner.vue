@@ -1,22 +1,24 @@
 <template>
   <div>
-    <Swipe class="my-swipe" :auto="0" :show-indicators="false" :show-continuous="false" style="height: 200px">
-      <SwipeItem  v-for="banner in banners"  style="height: 200px">
-        <div>banner.cover</div>
-        <!--<SmallImage  v-bind:imgUrl='banner.cover' ImageWidth="320px" ImageHeight="200px"></SmallImage>-->
+    <Swipe style="height: 200px" :auto="1000">
+      <SwipeItem  v-for="banner in banners" >
+        <SmallImage  v-bind:imgUrl='banner.cover' :ImageWidth="ImageWidth" :ImageHeight=200></SmallImage>
       </SwipeItem>
     </Swipe>
   </div>
 </template>
 
 <script>
+  require('vue-swipe/dist/vue-swipe.css');
   import {Swipe, SwipeItem} from 'vue-swipe'
   import {RequestData} from '../../Http/SGHttp'
-  import SmallImage from '../PublicComponent/SmallImage.vue'
+  import SmallImage from '../Public/SmallImage.vue'
+  import {GetScreenWidth} from '../Public/PublicAction'
   export default {
     data () {
       return {
-        banners: []
+        banners: [],
+        ImageWidth:GetScreenWidth()
       }
     },
     components: {
