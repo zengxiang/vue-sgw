@@ -1,34 +1,27 @@
 <template>
   <div>
-    <swiper :options="swiperOption" class="swiperDiv">
-      <div class="swiper-slide" v-for="banner in banners">
-        <SmallImage v-bind:imgUrl='banner.cover' ImageWidth="100%" ImageHeight="200px"></SmallImage>
-      </div>
-    </swiper>
+    <Swipe class="my-swipe" :auto="0" :show-indicators="false" :show-continuous="false" style="height: 200px">
+      <SwipeItem  v-for="banner in banners"  style="height: 200px">
+        <div>banner.cover</div>
+        <!--<SmallImage  v-bind:imgUrl='banner.cover' ImageWidth="320px" ImageHeight="200px"></SmallImage>-->
+      </SwipeItem>
+    </Swipe>
   </div>
 </template>
 
 <script>
-  import {swiper, swiperSlide} from 'vue-awesome-swiper'
+  import {Swipe, SwipeItem} from 'vue-swipe'
   import {RequestData} from '../../Http/SGHttp'
   import SmallImage from '../PublicComponent/SmallImage.vue'
   export default {
     data () {
       return {
-        banners: [],
-        swiperOption: {
-          autoplay: 3500,
-          setWrapperSize :true,
-          pagination : '.swiper-pagination',
-          paginationClickable :true,
-          mousewheelControl : true,
-          observeParents:true
-        }
+        banners: []
       }
     },
     components: {
-      swiper,
-      swiperSlide,
+      Swipe,
+      SwipeItem,
       SmallImage
     },
     created () {
@@ -48,7 +41,4 @@
   }
 </script>
 <style>
-  .swiperDiv {
-    background: red;
-  }
 </style>
