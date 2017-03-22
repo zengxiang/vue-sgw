@@ -9,11 +9,16 @@ export function RequestData(method, url, body, resolve, reject) {
       'Accept': 'application/json',
       'Content-Type': 'application/x-www-form-urlencoded'
     },
-    dataType:'JSONP',
     data: body
   }).then(function (response) {
-    console.log(response)
-    resolve(response)
+    console.log(response.data)
+    if(response.status == 200 && response.data.status == 1 )
+    {
+      resolve(response.data)
+    }else {
+      reject(error)
+
+    }
   })
     .catch(function (error) {
       console.log(error)
@@ -66,8 +71,8 @@ export function GetRequestData(url, body, resolve, reject) {
   });
 }
 
-
-// 需要汉字转码的用下面方法
+//
+// //需要汉字转码的用下面方法
 // function toQueryString(obj) {
 //     return obj ? Object.keys(obj).sort().map(function (key) {
 //         var val = obj[key];
