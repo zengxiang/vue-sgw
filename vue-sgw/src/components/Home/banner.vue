@@ -1,12 +1,10 @@
 <template>
   <div>
-    <range
-      :min="10"
-      :max="90"
-      :step="10"
-      :bar-height="5">
-    </range>
-        <!--<small-image  v-bind:imgUrl='banner.cover' :ImageWidth="ImageWidth" :ImageHeight=200></small-image>-->
+    <mt-swipe :auto="4000"  style="height:200px">
+      <mt-swipe-item  v-for="banner in banners">
+        <small-image  v-bind:imgUrl='banner.cover' :ImageWidth="ImageWidth" :ImageHeight=200></small-image>
+      </mt-swipe-item>
+    </mt-swipe>
   </div>
 </template>
 
@@ -14,7 +12,7 @@
   import {RequestData} from '../../Http/SGHttp'
   import SmallImage from '../../Public/SmallImage.vue'
   import {GetScreenWidth} from '../../Public/PublicAction'
-  import { Range } from 'mint-ui';
+
 
   export default {
     data () {
@@ -24,8 +22,7 @@
       }
     },
     components: {
-      SmallImage,
-      Range
+      SmallImage
     },
     created(){
       this.GetListData()

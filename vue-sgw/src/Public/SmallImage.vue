@@ -1,7 +1,9 @@
 <template>
-  <div v-bind:style="{width:ImageWidth+'px',height: ImageHeight+'px'}">
-    <img :src="imgUrl" @load="addImage()" ref="MyImageView">
-  </div>
+  <!--<div style="overflow: hidden">-->
+    <div v-bind:style="{width:ImageWidth+'px',height: ImageHeight+'px'}">
+      <img :src="imgUrl" @load="addImage()" ref="MyImageView">
+    </div>
+  <!--</div>-->
 </template>
 
 <script>
@@ -23,15 +25,15 @@
           $(img).css({
             'position': 'relative',
             width: this.ImageWidth + 'px',
-            heigh: this.ImageWidth/img.width *img.height +'px',
-            top: -(this.ImageWidth/img.width *img.height - this.ImageHeight) / 2 + 'px'
+            heigh: this.ImageWidth / img.width * img.height + 'px',
+            top: -(this.ImageWidth / img.width * img.height - this.ImageHeight) / 2 + 'px'
           })
         } else {
           $(img).css({
             'position': 'relative',
             height: this.ImageHeight + 'px',
-            width: this.ImageHeight/img.heigh *img.width +'px',
-            left: -( this.ImageHeight/img.heigh *img.width  -this.ImageWidth)/ 2 + 'px'
+            width: this.ImageHeight / img.heigh * img.width + 'px',
+            left: -( this.ImageHeight / img.heigh * img.width - this.ImageWidth) / 2 + 'px'
           })
         }
       }
