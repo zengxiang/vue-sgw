@@ -4,6 +4,9 @@ import Home from '../components/Home/Home.vue'
 
 Vue.use(Router)
 
+import 'mint-ui/lib/style.css';
+
+
 export default new Router({
   routes: [
     {

@@ -1,19 +1,21 @@
 <template>
   <div>
-    <Swipe style="height: 200px" :auto="1000">
-      <SwipeItem  v-for="banner in banners" >
-        <SmallImage  v-bind:imgUrl='banner.cover' :ImageWidth="ImageWidth" :ImageHeight=200></SmallImage>
-      </SwipeItem>
-    </Swipe>
+    <range
+      :min="10"
+      :max="90"
+      :step="10"
+      :bar-height="5">
+    </range>
+        <!--<small-image  v-bind:imgUrl='banner.cover' :ImageWidth="ImageWidth" :ImageHeight=200></small-image>-->
   </div>
 </template>
 
 <script type="es6">
-  require('vue-swipe/dist/vue-swipe.css');
-  import {Swipe, SwipeItem} from 'vue-swipe'
   import {RequestData} from '../../Http/SGHttp'
   import SmallImage from '../../Public/SmallImage.vue'
   import {GetScreenWidth} from '../../Public/PublicAction'
+  import { Range } from 'mint-ui';
+
   export default {
     data () {
       return {
@@ -22,9 +24,8 @@
       }
     },
     components: {
-      Swipe,
-      SwipeItem,
-      SmallImage
+      SmallImage,
+      Range
     },
     created(){
       this.GetListData()
