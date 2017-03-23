@@ -8,12 +8,12 @@
   </div>
 </template>
 
-<script>
+<script type="es6">
   require('vue-swipe/dist/vue-swipe.css');
   import {Swipe, SwipeItem} from 'vue-swipe'
   import {RequestData} from '../../Http/SGHttp'
-  import SmallImage from '../Public/SmallImage.vue'
-  import {GetScreenWidth} from '../Public/PublicAction'
+  import SmallImage from '../../Public/SmallImage.vue'
+  import {GetScreenWidth} from '../../Public/PublicAction'
   export default {
     data () {
       return {
@@ -26,7 +26,7 @@
       SwipeItem,
       SmallImage
     },
-    created () {
+    created(){
       this.GetListData()
     },
     methods: {
