@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd30ea1d-4733-4901-b4a6-ffe3193f0323" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Public/SlideSelectionBtn.vue" afterPath="$PROJECT_DIR$/src/Public/SlideSelectionBtn.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Public/SmallImage.vue" afterPath="$PROJECT_DIR$/src/Public/SmallImage.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home/Home.vue" afterPath="$PROJECT_DIR$/src/components/Home/Home.vue" />
     </list>
     <ignored path="vue-sgw.iws" />
@@ -31,9 +28,11 @@
       <file leaf-file-name="Home.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Home/Home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="435">
+              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+              <folding>
+                <element signature="e#942#975#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,7 +179,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="28" />
+    <option name="x" value="409" />
     <option name="y" value="23" />
     <option name="width" value="1232" />
     <option name="height" value="815" />
@@ -460,15 +459,15 @@
       <workItem from="1490238125543" duration="2616000" />
       <workItem from="1490251119137" duration="9931000" />
       <workItem from="1490317173633" duration="20692000" />
-      <workItem from="1490366282160" duration="290000" />
+      <workItem from="1490366282160" duration="388000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61185000" />
+    <option name="totallyTimeSpent" value="61283000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="23" width="1232" height="815" extended-state="0" />
+    <frame x="409" y="23" width="1232" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23781998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -516,7 +515,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#942#975#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -551,7 +552,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding />
+          <folding>
+            <element signature="e#942#975#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -588,7 +591,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding />
+          <folding>
+            <element signature="e#942#975#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -646,7 +651,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="e#942#975#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -669,7 +676,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="e#942#975#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -793,6 +802,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Public/SmallImage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/banner.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -821,19 +838,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Public/SmallImage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="435">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+          <folding>
+            <element signature="e#942#975#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

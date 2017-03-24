@@ -31,7 +31,7 @@
   export default {
     data () {
       return {
-        active: 'tab-container1',
+//        active: 'tab-container1',
         Items:['aaa','bbb','ccc','ddd','eee','fff','ggg','hhh'],
         selectIndex:0
       }
@@ -42,16 +42,15 @@
     },
     created () {
 
-      let self = this;
-      this.$watch('active', function () {
-//        var myButton = self.$refs.myButton;
-
-      }, {deep: true});
+//      let self = this;
+//      this.$watch('active', function () {
+//
+//      }, {deep: true});
     },
     methods: {
-      GetListData: function (selectIndex) {
-        this.active = 'tab-container' + selectIndex;
-      },
+//      GetListData: function (selectIndex) {
+//        this.active = 'tab-container' + selectIndex;
+//      },
       ChangeSelectFun:function (index) {
         this.selectIndex = index;
       }
