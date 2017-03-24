@@ -1,10 +1,8 @@
 <template>
   <div>
     <banner></banner>
+    <SlideSelectionBtn :Items="Items" :ChangeSelectFun="ChangeSelectFun" :selectIndex="selectIndex"></SlideSelectionBtn>
     <div>
-      <mt-button ref="myButton" v-bind:type="myBtnType1" @click="GetListData(1)">tab1</mt-button>
-      <mt-button ref="myButton1" v-bind:type="myBtnType2" @click="GetListData(2)">tab2</mt-button>
-      <mt-button ref="myButton1" v-bind:type="myBtnType3" @click="GetListData(3)">tab3</mt-button>
       <mt-tab-container v-model="active" :swipeable="true">
         <mt-tab-container-item id="tab-container1">
           <div v-for="n in 10" title="tab-container 1">
@@ -29,6 +27,7 @@
 <script>
   import Banner from './banner.vue'
   import {GetRequestData} from '../../Http/SGHttp'
+  import SlideSelectionBtn from '../../Public/SlideSelectionBtn.vue';
 
 
 
@@ -37,14 +36,13 @@
     data () {
       return {
         active: 'tab-container1',
-        myBtnType1:'primary',
-        myBtnType2:'default',
-        myBtnType3:'default'
-
+        Items:['aaa','bbb','ccc','ddd','eee','fff','ggg','hhh'],
+        selectIndex:0
       }
     },
     components: {
-      Banner
+      Banner,
+      SlideSelectionBtn
     },
     created () {
 
@@ -76,7 +74,11 @@
     methods: {
       GetListData: function (selectIndex) {
         this.active = 'tab-container' + selectIndex;
+      },
+      ChangeSelectFun:function (index) {
+        this.selectIndex = index;
       }
+
     }
   }
 </script>
