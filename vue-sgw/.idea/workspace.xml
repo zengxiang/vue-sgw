@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd30ea1d-4733-4901-b4a6-ffe3193f0323" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home/Home.vue" afterPath="$PROJECT_DIR$/src/components/Home/Home.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Public/SlideSelectionBtn.vue" afterPath="$PROJECT_DIR$/src/Public/SlideSelectionBtn.vue" />
     </list>
     <ignored path="vue-sgw.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Home.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Home.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/Home.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="2" selection-end-line="47" selection-end-column="25" />
               <folding>
                 <element signature="e#942#975#0" expanded="true" />
               </folding>
@@ -47,54 +47,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/axios/index.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="10" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PublicAction.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Public/PublicAction.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SlideSelectionBtn.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SlideSelectionBtn.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Public/SlideSelectionBtn.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1305">
-              <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+            <state relative-caret-position="199">
+              <caret line="101" column="60" selection-start-line="101" selection-start-column="60" selection-end-line="101" selection-end-column="60" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="banner.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/banner.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#mt-swipe#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <marker date="1490363359000" expanded="false" signature="316:468" ph="..." />
-                <marker date="1490363359000" expanded="true" signature="488:1031" ph="{...}" />
-                <marker date="1490363359000" expanded="true" signature="502:589" ph="{...}" />
-                <marker date="1490363359000" expanded="true" signature="517:583" ph="{...}" />
-                <marker date="1490363359000" expanded="true" signature="607:631" ph="{&quot;SmallImage&quot;: SmallImage...}" />
-                <marker date="1490363359000" expanded="true" signature="646:678" ph="{...}" />
-                <marker date="1490363359000" expanded="true" signature="693:1027" ph="{...}" />
-                <marker date="1490363359000" expanded="true" signature="726:1020" ph="{...}" />
-                <marker date="1490363359000" expanded="true" signature="829:1011" ph="{...}" />
-                <marker date="1490363359000" expanded="true" signature="879:956" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -102,8 +60,8 @@
       <file leaf-file-name="SmallImage.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Public/SmallImage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="315">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -155,9 +113,9 @@
         <option value="$PROJECT_DIR$/src/components/Home/banner.vue" />
         <option value="$PROJECT_DIR$/src/Http/SGHttp.js" />
         <option value="$PROJECT_DIR$/src/Public/SlideSelectionBtn.vue.js" />
-        <option value="$PROJECT_DIR$/src/Public/SlideSelectionBtn.vue" />
         <option value="$PROJECT_DIR$/src/Public/SmallImage.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.vue" />
+        <option value="$PROJECT_DIR$/src/Public/SlideSelectionBtn.vue" />
       </list>
     </option>
   </component>
@@ -179,7 +137,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="409" />
+    <option name="x" value="292" />
     <option name="y" value="23" />
     <option name="width" value="1232" />
     <option name="height" value="815" />
@@ -459,15 +417,15 @@
       <workItem from="1490238125543" duration="2616000" />
       <workItem from="1490251119137" duration="9931000" />
       <workItem from="1490317173633" duration="20692000" />
-      <workItem from="1490366282160" duration="388000" />
+      <workItem from="1490366282160" duration="3739000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61283000" />
+    <option name="totallyTimeSpent" value="64634000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="409" y="23" width="1232" height="815" extended-state="0" />
+    <frame x="292" y="23" width="1232" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23781998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -475,19 +433,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986626" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,16 +469,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#942#975#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -534,7 +482,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#mt-swipe#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <marker date="1490363359000" expanded="false" signature="316:468" ph="..." />
+            <marker date="1490363359000" expanded="true" signature="316:468" ph="..." />
             <marker date="1490363359000" expanded="true" signature="488:1031" ph="{...}" />
             <marker date="1490363359000" expanded="true" signature="502:589" ph="{...}" />
             <marker date="1490363359000" expanded="true" signature="517:583" ph="{...}" />
@@ -571,7 +519,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#mt-swipe#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <marker date="1490363359000" expanded="false" signature="316:468" ph="..." />
+            <marker date="1490363359000" expanded="true" signature="316:468" ph="..." />
             <marker date="1490363359000" expanded="true" signature="488:1031" ph="{...}" />
             <marker date="1490363359000" expanded="true" signature="502:589" ph="{...}" />
             <marker date="1490363359000" expanded="true" signature="517:583" ph="{...}" />
@@ -802,21 +750,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Public/SmallImage.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="435">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="2" selection-end-line="47" selection-end-column="25" />
+          <folding>
+            <element signature="e#942#975#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/banner.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="208">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#mt-swipe#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <marker date="1490363359000" expanded="false" signature="316:468" ph="..." />
+            <marker date="1490363359000" expanded="true" signature="316:468" ph="..." />
             <marker date="1490363359000" expanded="true" signature="488:1031" ph="{...}" />
             <marker date="1490363359000" expanded="true" signature="502:589" ph="{...}" />
             <marker date="1490363359000" expanded="true" signature="517:583" ph="{...}" />
@@ -830,21 +780,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Public/SlideSelectionBtn.vue">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+        <state relative-caret-position="231">
+          <caret line="1727" column="0" selection-start-line="1727" selection-start-column="0" selection-end-line="1727" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.vue">
+    <entry file="file://$PROJECT_DIR$/src/Public/SmallImage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-          <folding>
-            <element signature="e#942#975#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Public/SlideSelectionBtn.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="101" column="60" selection-start-line="101" selection-start-column="60" selection-end-line="101" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>

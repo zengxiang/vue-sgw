@@ -23,7 +23,7 @@
       return {}
     },
     props: {
-      Items: '',
+      Items: Array,
       btnWidth: 0,
       doTapChange: Function,
       selectIndex: 0
@@ -37,11 +37,11 @@
       return createElement('div', {
         style: {
           width: self.btnWidth * this.Items.length + 'px',
-          display: 'flex'
+          display: 'flex',
+          position: 'relative'
         }
       }, [
         self.Items.map(function (title, index) {
-
           var textColor = 'black'
           if (self.selectIndex == index) {
             textColor = 'red'
@@ -90,6 +90,20 @@
         this.ChangeSelectFun(index);
       }
     },
+    created(){
+      if (this.Items.length > 5) {
+        var mybtnWidth = GetScreenWidth() / 5;
+        let self = this;
+        this.$watch('selectIndex', function () {
+          if (self.selectIndex > 2 && self.selectIndex < self.Items.length - 2) {
+            let scrollL = (self.selectIndex - 2) * mybtnWidth
+            var myChild = this.$refs.myChild;
+//            $(myChild).scrollLeft(scrollLeft);
+            $(myChild).animate({scrollLeft: scrollL+'px'}, 300);
+          }
+        }, {deep: true});
+      }
+    },
     components: {
       Child
     },
@@ -101,10 +115,11 @@
       let self = this
       return createElement('div', [
         createElement('div', {
+          ref: 'myChild',
           style: {
             width: GetScreenWidth() + 'px',
             overflow: 'scroll',
-            position: 'relative'
+            position: 'relative',
           }
         }, [
           createElement('div', {
@@ -118,9 +133,6 @@
             }
           }),
           createElement(Child, {
-            style: {
-              position: 'relative'
-            },
             props: {
               Items: self.Items,
               btnWidth: mybtnWidth,
@@ -130,12 +142,6 @@
           })
         ]),
       ])
-    },
-    created ()
-    {
-//      this.$watch('selectIndex', function () {
-//        console.log(this.selectIndex);
-//      })
     }
   }
 </script>
