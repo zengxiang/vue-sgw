@@ -1,6 +1,6 @@
 <template>
   <!--<div style="overflow: hidden">-->
-    <div v-bind:style="{width:ImageWidth+'px',height: ImageHeight+'px'}">
+    <div :style="{width:ImageWidth+'px',height: ImageHeight+'px'}">
       <img :src="imgUrl" @load="addImage()" ref="MyImageView">
     </div>
   <!--</div>-->

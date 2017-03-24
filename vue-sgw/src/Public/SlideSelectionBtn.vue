@@ -133,9 +133,9 @@
     },
     created ()
     {
-      this.$watch('selectIndex', function () {
-        console.log(this.selectIndex);
-      })
+//      this.$watch('selectIndex', function () {
+//        console.log(this.selectIndex);
+//      })
     }
   }
 </script>

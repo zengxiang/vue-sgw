@@ -3,23 +3,23 @@
     <banner></banner>
     <SlideSelectionBtn :Items="Items" :ChangeSelectFun="ChangeSelectFun" :selectIndex="selectIndex"></SlideSelectionBtn>
     <div>
-      <mt-tab-container v-model="active" :swipeable="true">
-        <mt-tab-container-item id="tab-container1">
-          <div v-for="n in 10" title="tab-container 1">
-            1111
-          </div>
-        </mt-tab-container-item>
-        <mt-tab-container-item id="tab-container2">
-          <div v-for="n in 5" title="tab-container 2">
-            222
-          </div>
-        </mt-tab-container-item>
-        <mt-tab-container-item id="tab-container3">
-          <div v-for="n in 7" title="tab-container 3">
-            333
-          </div>
-        </mt-tab-container-item>
-      </mt-tab-container>
+      <!--<mt-tab-container v-model="active" :swipeable="true">-->
+        <!--<mt-tab-container-item id="tab-container1">-->
+          <!--<div v-for="n in 10" title="tab-container 1">-->
+            <!--1111-->
+          <!--</div>-->
+        <!--</mt-tab-container-item>-->
+        <!--<mt-tab-container-item id="tab-container2">-->
+          <!--<div v-for="n in 5" title="tab-container 2">-->
+            <!--222-->
+          <!--</div>-->
+        <!--</mt-tab-container-item>-->
+        <!--<mt-tab-container-item id="tab-container3">-->
+          <!--<div v-for="n in 7" title="tab-container 3">-->
+            <!--333-->
+          <!--</div>-->
+        <!--</mt-tab-container-item>-->
+      <!--</mt-tab-container>-->
     </div>
   </div>
 </template>
@@ -28,10 +28,6 @@
   import Banner from './banner.vue'
   import {GetRequestData} from '../../Http/SGHttp'
   import SlideSelectionBtn from '../../Public/SlideSelectionBtn.vue';
-
-
-
-
   export default {
     data () {
       return {
@@ -49,25 +45,6 @@
       let self = this;
       this.$watch('active', function () {
 //        var myButton = self.$refs.myButton;
-        if (self.active == 'tab-container1')
-        {
-          self.myBtnType1 = 'primary';
-          self.myBtnType2 = 'default';
-          self.myBtnType3 = 'default';
-        }
-        if (self.active == 'tab-container2')
-        {
-          self.myBtnType1 = 'default';
-          self.myBtnType2 = 'primary';
-          self.myBtnType3 = 'default';
-        }
-        if (self.active == 'tab-container3')
-        {
-          self.myBtnType1 = 'default';
-          self.myBtnType2 = 'default';
-          self.myBtnType3 = 'primary';
-        }
-
 
       }, {deep: true});
     },
