@@ -95,12 +95,17 @@
         var mybtnWidth = GetScreenWidth() / 5;
         let self = this;
         this.$watch('selectIndex', function () {
+          var myChild = self.$refs.myChild;
+          if (self.selectIndex < 2) {
+            $(myChild).animate({scrollLeft: 0 + 'px'}, 300);
+          }
           if (self.selectIndex > 1 && self.selectIndex < self.Items.length - 2) {
             let scrollL = (self.selectIndex - 2) * mybtnWidth
-            var myChild = this.$refs.myChild;
-//            $(myChild).scrollLeft(scrollLeft);
-            console.log(scrollL);
-            $(myChild).animate({scrollLeft: scrollL+'px'}, 300);
+            $(myChild).animate({scrollLeft: scrollL + 'px'}, 300);
+          }
+          if (self.selectIndex > self.Items.length - 3) {
+            console.log((self.Items.length - 3 -2) * mybtnWidth);
+            $(myChild).animate({scrollLeft: (self.Items.length - 2) * mybtnWidth + 'px'}, 300);
           }
         }, {deep: true});
       }

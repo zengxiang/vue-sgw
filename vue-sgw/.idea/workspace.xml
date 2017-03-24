@@ -50,8 +50,8 @@
       <file leaf-file-name="SlideSelectionBtn.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Public/SlideSelectionBtn.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="97" column="78" selection-start-line="97" selection-start-column="78" selection-end-line="97" selection-end-column="78" />
+            <state relative-caret-position="229">
+              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -137,7 +137,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="462" />
+    <option name="x" value="369" />
     <option name="y" value="23" />
     <option name="width" value="1232" />
     <option name="height" value="815" />
@@ -417,15 +417,15 @@
       <workItem from="1490238125543" duration="2616000" />
       <workItem from="1490251119137" duration="9931000" />
       <workItem from="1490317173633" duration="20692000" />
-      <workItem from="1490366282160" duration="4065000" />
+      <workItem from="1490366282160" duration="4549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64960000" />
+    <option name="totallyTimeSpent" value="65444000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="462" y="23" width="1232" height="815" extended-state="0" />
+    <frame x="369" y="23" width="1232" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23781998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -798,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Public/SlideSelectionBtn.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="97" column="78" selection-start-line="97" selection-start-column="78" selection-end-line="97" selection-end-column="78" />
+        <state relative-caret-position="229">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding />
         </state>
       </provider>
