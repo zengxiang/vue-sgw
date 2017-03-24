@@ -95,10 +95,11 @@
         var mybtnWidth = GetScreenWidth() / 5;
         let self = this;
         this.$watch('selectIndex', function () {
-          if (self.selectIndex > 2 && self.selectIndex < self.Items.length - 2) {
+          if (self.selectIndex > 1 && self.selectIndex < self.Items.length - 2) {
             let scrollL = (self.selectIndex - 2) * mybtnWidth
             var myChild = this.$refs.myChild;
 //            $(myChild).scrollLeft(scrollLeft);
+            console.log(scrollL);
             $(myChild).animate({scrollLeft: scrollL+'px'}, 300);
           }
         }, {deep: true});
