@@ -1,6 +1,7 @@
 <script>
   import {GetScreenWidth} from './PublicAction'
 
+
   var ChildBtn = {
     template: '<div @click="doTapChange">{{title}}</div>',
     data: function () {
@@ -17,6 +18,7 @@
       }
     }
   }
+
 
   var Child = {
     data: function () {
@@ -76,6 +78,7 @@
     },
     methods: {}
   }
+
   export default {
     props: {
       Items: Array,
@@ -104,7 +107,7 @@
             $(myChild).animate({scrollLeft: scrollL + 'px'}, 300);
           }
           if (self.selectIndex > self.Items.length - 3) {
-            console.log((self.Items.length - 3 -2) * mybtnWidth);
+            console.log((self.Items.length - 3 - 2) * mybtnWidth);
             $(myChild).animate({scrollLeft: (self.Items.length - 2) * mybtnWidth + 'px'}, 300);
           }
         }, {deep: true});
@@ -119,7 +122,7 @@
         mybtnWidth = GetScreenWidth() / 5;
       }
       let self = this
-      return createElement('div', [
+      return createElement('div', {}, [
         createElement('div', {
           ref: 'myChild',
           style: {
