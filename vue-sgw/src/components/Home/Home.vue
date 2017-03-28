@@ -8,22 +8,22 @@
       <HomeTitleRow :title="333" :doTapAllFun="doTapAllFun"></HomeTitleRow>
       <RecommendVideoItemScroll></RecommendVideoItemScroll>
       <div style="height: 6px;background: #eeeeee"></div>
-      <SlideSelectionBtn  id="homeSlideWrap" :Items="Items" :ChangeSelectFun="ChangeSelectFun"
+      <SlideSelectionBtn id="homeSlideWrap" :Items="Items" :ChangeSelectFun="ChangeSelectFun"
                          :selectIndex="getIndex()"></SlideSelectionBtn>
 
 
       <mt-tab-container v-model="active" :swipeable="true">
-        <mt-tab-container-item id="tabContainer1">
+        <mt-tab-container-item  style="min-height: 568px"  id="tabContainer1">
           <div v-for="n in 10" title="tab-container 1">
             1111
           </div>
         </mt-tab-container-item>
-        <mt-tab-container-item id="tabContainer2">
+        <mt-tab-container-item  style="min-height: 568px"  id="tabContainer2">
           <div v-for="n in 50" title="tab-container 2">
             222
           </div>
         </mt-tab-container-item>
-        <mt-tab-container-item id="tabContainer3">
+        <mt-tab-container-item  style="min-height: 568px"  id="tabContainer3">
           <div v-for="n in 80" title="tab-container 3">
             333
           </div>
@@ -50,7 +50,7 @@
         allLoaded: false,
         isShow: false,
         dataArray: [],
-        active: 'tabContainer1'
+        active: 'tabContainer1',
       }
     },
     components: {
@@ -59,15 +59,16 @@
       HomeTitleRow,
       RecommendVideoItemScroll
     },
+    mounted() {
+    },
     created () {
-
       let self = this;
       $(window).scroll(function (event) {
         event.stopPropagation();
         var top = document.getElementById('homeSlideWrap').offsetTop - $(document).scrollTop();
 //        if (top <= document.getElementById('homeSlideWrap').offsetHeight) {
 
-        if (top <=  0) {
+        if (top <= 0) {
 
           self.isShow = true;
         } else {
@@ -88,6 +89,8 @@
       }
     },
     methods: {
+
+
       loadTop(id) {
 //        alert(id)
         console.log(id);
@@ -110,15 +113,15 @@
       },
       ChangeSelectFun: function (index) {
         this.active = 'tabContainer' + (index + 1);
-        console.log(this.active);
 //        this.$refs.aaaaa.GetListData('66666');
       },
-      doTapAllFun:function () {
-       alert('点击全部');
+      doTapAllFun: function () {
+        alert('点击全部');
       }
 
     }
   }
 </script>
 <style>
+
 </style>
