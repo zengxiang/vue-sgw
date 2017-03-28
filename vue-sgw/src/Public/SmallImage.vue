@@ -1,9 +1,9 @@
 <template>
-  <!--<div style="overflow: hidden">-->
+  <div style="overflow: hidden">
     <div :style="{width:ImageWidth+'px',height: ImageHeight+'px'}">
       <img :src="imgUrl" @load="addImage()" ref="MyImageView">
     </div>
-  <!--</div>-->
+  </div>
 </template>
 
 <script>

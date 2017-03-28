@@ -1,0 +1,12 @@
+
+body {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  word-break: normal;
+}

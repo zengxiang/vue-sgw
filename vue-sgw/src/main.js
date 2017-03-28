@@ -4,7 +4,8 @@ import Vue from 'vue'
 import App from './App'
 
 import Mint from 'mint-ui';
-import 'mint-ui/lib/style.css';
+import 'mint-ui/lib/style.css'
+import './index.css'
 Vue.use(Mint);
 
 import router from './router'
@@ -16,3 +17,4 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+

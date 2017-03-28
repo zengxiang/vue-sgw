@@ -4,11 +4,11 @@
 'use strict';
 
 export  function GetScreenWidth() {
-    return document.documentElement.clientWidth;
+  return document.body.clientWidth;
 }
 
 export  function GetScreenHeight() {
-    return document.documentElement.clientHeight;
+    return document.body.clientHeight;
 }
 
 export function GetListData() {

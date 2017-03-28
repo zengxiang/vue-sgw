@@ -12,8 +12,6 @@
   import {RequestData} from '../../Http/SGHttp'
   import SmallImage from '../../Public/SmallImage.vue'
   import {GetScreenWidth} from '../../Public/PublicAction'
-
-
   export default {
     data () {
       return {
@@ -30,7 +28,6 @@
     },
     methods: {
       GetListData: function (a) {
-          alert(a);
         let self = this;
         RequestData('get','course/listtui.json',{}, function (responseData) {
           responseData.data.map(function (item) {
