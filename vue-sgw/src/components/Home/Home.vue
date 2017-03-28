@@ -1,36 +1,33 @@
 <template>
   <div>
-
-    <banner></banner>
-
-    <SlideSelectionBtn :Items="Items" :ChangeSelectFun="ChangeSelectFun"
+    <SlideSelectionBtn  v-show="isShow" style="position: fixed;left: 0;top:0;z-index: 100" :Items="Items"
+                       :ChangeSelectFun="ChangeSelectFun"
                        :selectIndex="selectIndex"></SlideSelectionBtn>
+
+
     <mt-loadmore ref="loadmore" :top-method="loadTop" :bottom-method="loadBottom" :bottom-all-loaded="allLoaded">
-    <div style="height: 627px;background: red;overflow: scroll">
-      <ul>
-        <li v-for="item in dataArray">{{ item }}</li>
-      </ul>
-    </div>
+      <banner ref="aaaaa"></banner>
+      <SlideSelectionBtn :Items="Items" :ChangeSelectFun="ChangeSelectFun"
+                         :selectIndex="selectIndex"></SlideSelectionBtn>
+      <mt-tab-container v-model="active" :swipeable="true">
+        <mt-tab-container-item id="tab-container1">
+          <div v-for="n in 10" title="tab-container 1">
+            1111
+          </div>
+        </mt-tab-container-item>
+        <mt-tab-container-item id="tab-container2">
+          <div v-for="n in 50" title="tab-container 2">
+            222
+          </div>
+        </mt-tab-container-item>
+        <mt-tab-container-item id="tab-container3">
+          <div v-for="n in 80" title="tab-container 3">
+            333
+          </div>
+        </mt-tab-container-item>
+      </mt-tab-container>
     </mt-loadmore>
 
-
-    <!--<mt-tab-container v-model="active" :swipeable="true">-->
-    <!--<mt-tab-container-item id="tab-container1">-->
-    <!--<div v-for="n in 10" title="tab-container 1">-->
-    <!--1111-->
-    <!--</div>-->
-    <!--</mt-tab-container-item>-->
-    <!--<mt-tab-container-item id="tab-container2">-->
-    <!--<div v-for="n in 5" title="tab-container 2">-->
-    <!--222-->
-    <!--</div>-->
-    <!--</mt-tab-container-item>-->
-    <!--<mt-tab-container-item id="tab-container3">-->
-    <!--<div v-for="n in 7" title="tab-container 3">-->
-    <!--333-->
-    <!--</div>-->
-    <!--</mt-tab-container-item>-->
-    <!--</mt-tab-container>-->
   </div>
 </template>
 
@@ -42,10 +39,11 @@
   export default {
     data () {
       return {
-//        active: 'tab-container1',
+        active: 'tab-container1',
         Items: ['推荐课程', '讲师团队', '关于我们'],
         selectIndex: 0,
         allLoaded: false,
+        isShow:false,
         dataArray: []
       }
     },
@@ -54,7 +52,22 @@
       SlideSelectionBtn
     },
     created () {
-      for (let i = 1; i <= 40; i++) {
+
+
+
+      let self = this;
+      $(window).scroll(function (event) {
+        event.stopPropagation();
+        var top =  200 - $(document).scrollTop();
+        if (top <=0)
+        {
+          self.isShow =  true;
+        }else {
+          self.isShow =  false;
+        }
+      });
+
+      for (let i = 1; i <= 80; i++) {
         this.dataArray.push(i);
       }
 
@@ -87,6 +100,8 @@
 //      },
       ChangeSelectFun: function (index) {
         this.selectIndex = index;
+        this.$refs.aaaaa.GetListData('66666');
+
       }
 
     }

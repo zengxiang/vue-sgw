@@ -129,6 +129,7 @@
             width: GetScreenWidth() + 'px',
             overflow: 'scroll',
             position: 'relative',
+            background: 'white'
           }
         }, [
           createElement('div', {

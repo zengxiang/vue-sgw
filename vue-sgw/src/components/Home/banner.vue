@@ -26,9 +26,11 @@
     },
     created(){
       this.GetListData()
+
     },
     methods: {
-      GetListData: function () {
+      GetListData: function (a) {
+          alert(a);
         let self = this;
         RequestData('get','course/listtui.json',{}, function (responseData) {
           responseData.data.map(function (item) {
