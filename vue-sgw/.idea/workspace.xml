@@ -36,44 +36,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecommendVideoItemScroll.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/RecommendVideoItemScroll.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="30" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#619#671#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Home.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Home/Home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="15">
+              <caret line="71" column="31" lean-forward="false" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
               <folding>
-                <element signature="n#style#0;n#SlideSelectionBtn#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#mt-tab-container-item#0;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#mt-tab-container-item#1;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#mt-tab-container-item#2;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#1508#1541#0" expanded="true" />
+                <element signature="e#1629#1662#0" expanded="true" />
+                <marker date="1490790619000" expanded="true" signature="2361:2722" ph="{...}" />
+                <marker date="1490790619000" expanded="true" signature="2593:2637" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PublicAction.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Public/PublicAction.js">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,6 +86,7 @@
       <find>selectIndex</find>
       <find>doTapAllFun</find>
       <find>listTable</find>
+      <find>activeClass</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,10 +115,10 @@
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeTitleRow.vue" />
         <option value="$PROJECT_DIR$/src/App.vue" />
-        <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/Public/SmallImage.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/RecommendVideoItemScroll.vue" />
         <option value="$PROJECT_DIR$/src/Public/PublicAction.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.vue" />
       </list>
     </option>
@@ -157,8 +141,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="275" />
-    <option name="y" value="23" />
+    <option name="x" value="405" />
+    <option name="y" value="39" />
     <option name="width" value="1232" />
     <option name="height" value="813" />
   </component>
@@ -326,7 +310,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="editor.config.accepted" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -436,15 +420,19 @@
       <workItem from="1490422111025" duration="4112000" />
       <workItem from="1490675436025" duration="5225000" />
       <workItem from="1490693359203" duration="10204000" />
-      <workItem from="1490705774444" duration="1826000" />
+      <workItem from="1490705774444" duration="2133000" />
+      <workItem from="1490751958193" duration="437000" />
+      <workItem from="1490781127607" duration="192000" />
+      <workItem from="1490786619572" duration="163000" />
+      <workItem from="1490788571689" duration="1657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87556000" />
+    <option name="totallyTimeSpent" value="90312000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="275" y="23" width="1232" height="813" extended-state="0" />
+    <frame x="405" y="39" width="1232" height="813" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23701298" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -495,12 +483,11 @@
         <state relative-caret-position="240">
           <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding>
-            <element signature="n#style#0;n#SlideSelectionBtn#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#mt-tab-container-item#0;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#mt-tab-container-item#1;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#mt-tab-container-item#2;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1508#1541#0" expanded="true" />
+            <element signature="e#1629#1662#0" expanded="true" />
+            <marker date="1490790619000" expanded="true" signature="2361:2722" ph="{...}" />
+            <marker date="1490790619000" expanded="true" signature="2593:2637" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -560,12 +547,11 @@
         <state relative-caret-position="465">
           <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
           <folding>
-            <element signature="n#style#0;n#SlideSelectionBtn#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#mt-tab-container-item#0;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#mt-tab-container-item#1;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#mt-tab-container-item#2;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1508#1541#0" expanded="true" />
+            <element signature="e#1629#1662#0" expanded="true" />
+            <marker date="1490790619000" expanded="true" signature="2361:2722" ph="{...}" />
+            <marker date="1490790619000" expanded="true" signature="2593:2637" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -574,7 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -590,12 +575,11 @@
         <state relative-caret-position="420">
           <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding>
-            <element signature="n#style#0;n#SlideSelectionBtn#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#mt-tab-container-item#0;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#mt-tab-container-item#1;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#mt-tab-container-item#2;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1508#1541#0" expanded="true" />
+            <element signature="e#1629#1662#0" expanded="true" />
+            <marker date="1490790619000" expanded="true" signature="2361:2722" ph="{...}" />
+            <marker date="1490790619000" expanded="true" signature="2593:2637" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -604,7 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,7 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,13 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -718,28 +693,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/banner.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#mt-swipe#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#309#354#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,35 +711,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/RecommendVideoItemScroll.vue">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#619#671#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Public/SlideSelectionBtn.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="19" column="3" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="19" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="238">
+          <caret line="995" column="0" lean-forward="false" selection-start-line="995" selection-start-column="0" selection-end-line="995" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -794,25 +729,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+    <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="995" column="0" lean-forward="false" selection-start-line="995" selection-start-column="0" selection-end-line="995" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/RecommendVideoItemScroll.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#619#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Public/SlideSelectionBtn.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="19" column="3" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="19" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="71" column="31" lean-forward="false" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
           <folding>
-            <element signature="n#style#0;n#SlideSelectionBtn#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#mt-tab-container-item#0;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#mt-tab-container-item#1;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#mt-tab-container-item#2;n#mt-tab-container#0;n#mt-loadmore#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1508#1541#0" expanded="true" />
+            <element signature="e#1629#1662#0" expanded="true" />
+            <marker date="1490790619000" expanded="true" signature="2361:2722" ph="{...}" />
+            <marker date="1490790619000" expanded="true" signature="2593:2637" ph="{...}" />
           </folding>
         </state>
       </provider>
