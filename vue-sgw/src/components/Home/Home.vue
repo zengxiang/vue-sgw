@@ -1,14 +1,14 @@
 <template>
   <div>
-    <!--<SlideSelectionBtn v-show="isShow" style="position: fixed;left: 0;top:0;z-index: 100" :Items="Items"-->
-                       <!--:ChangeSelectFun="ChangeSelectFun"-->
-                       <!--:selectIndex="getIndex()"></SlideSelectionBtn>-->
+    <SlideSelectionBtn  v-show="isActive" style="position: fixed;left: 0;top:0;z-index: 100" :Items="Items"
+                       :ChangeSelectFun="ChangeSelectFun"
+                       :selectIndex="getIndex()"></SlideSelectionBtn>
     <mt-loadmore ref="loadmore" :top-method="loadTop" :bottom-method="loadBottom" :bottom-all-loaded="allLoaded">
       <banner ref="aaaaa"></banner>
       <HomeTitleRow :title="333" :doTapAllFun="doTapAllFun"></HomeTitleRow>
       <RecommendVideoItemScroll></RecommendVideoItemScroll>
       <div style="height: 6px;background: #eeeeee"></div>
-      <SlideSelectionBtn :class="{activeClass:isActive}" id="homeSlideWrap" :Items="Items" :ChangeSelectFun="ChangeSelectFun"
+      <SlideSelectionBtn  id="homeSlideWrap" :Items="Items" :ChangeSelectFun="ChangeSelectFun"
                          :selectIndex="getIndex()"></SlideSelectionBtn>
       <mt-tab-container v-model="active" :swipeable="true">
         <mt-tab-container-item  style="min-height: 568px"  id="tabContainer1">
@@ -46,9 +46,8 @@
       return {
 //        Items: ['推荐课程', '讲师团队', '关于我们'],
         Items: ['推荐课程'],
-
-        allLoaded: false,
         isActive:false,
+        allLoaded: false,
         dataArray: [],
         active: 'tabContainer1',
       }
@@ -65,13 +64,15 @@
       let self = this;
       $(window).scroll(function (event) {
         event.stopPropagation();
+
+
         var top = document.getElementById('homeSlideWrap').offsetTop - $(document).scrollTop();
         if (top <= document.getElementById('homeSlideWrap').offsetHeight) {
 
 //        if (top <= 0) {
-          self.isActive = false;
-        } else {
           self.isActive = true;
+        } else {
+          self.isActive = false;
         }
 
         console.log(top);
@@ -122,10 +123,5 @@
   }
 </script>
 <style>
-  .activeClass{
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: 100;
-  }
+
 </style>
