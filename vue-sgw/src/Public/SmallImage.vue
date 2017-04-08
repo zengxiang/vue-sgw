@@ -1,20 +1,23 @@
 <template>
-  <div style="overflow: hidden">
-    <div :style="{width:ImageWidth+'px',height: ImageHeight+'px'}">
+  <div>
+    <div  :style="classStyle">
       <img :src="imgUrl" @load="addImage()" ref="MyImageView">
     </div>
   </div>
+
 </template>
 
 <script>
   export default {
     props: {
       imgUrl: '',
-      ImageWidth: "",
-      ImageHeight: ""
+      ImageWidth: 0,
+      ImageHeight: 0
     },
     data: function () {
-      return {}
+      return {
+        classStyle: {}
+      }
     },
     methods: {
       addImage: function () {
@@ -35,6 +38,11 @@
             width: this.ImageHeight / img.heigh * img.width + 'px',
             left: -( this.ImageHeight / img.heigh * img.width - this.ImageWidth) / 2 + 'px'
           })
+        }
+        this.classStyle = {
+          width: this.ImageWidth + 'px',
+          height: this.ImageHeight + 'px',
+          overflow: 'hidden'
         }
       }
     },

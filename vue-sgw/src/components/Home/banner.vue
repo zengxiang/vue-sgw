@@ -29,12 +29,14 @@
     methods: {
       GetListData: function (a) {
         let self = this;
-        RequestData('get','course/listtui.json',{}, function (responseData) {
+        RequestData('get','course/listIndexImage.json',{}, function (responseData) {
           responseData.data.map(function (item) {
-            item.cover = responseData.imageServer + item.cover;
+            item.cover = responseData.fileServer + item.path;
           })
           self.banners = responseData.data;
-        })
+        },function (error) {
+
+        });
       },
     }
   }

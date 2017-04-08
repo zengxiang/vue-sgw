@@ -1,40 +1,70 @@
-let HOST = 'http://xplay.dinghaoinfo.com/api/'
-// let HOST = 'http://192.168.1.129/';
+let HOST = 'http://192.168.1.129'
 import axios from 'axios'
 export function RequestData(method, url, body, resolve, reject) {
-  axios({
-    method: method,
-    url: HOST + url,
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/x-www-form-urlencoded'
-    },
-    data: body
-  }).then(function (response) {
-    console.log(response.data)
-    if(response.status == 200 && response.data.status == 1 )
-    {
-      resolve(response.data)
-    }else {
-      reject(error)
 
-    }
-  })
-    .catch(function (error) {
-      console.log(error)
-      reject(error)
+
+  if (method.toUpperCase() == 'GET') {
+    axios({
+      method: 'get',
+      url: HOST + '/api/' + url + '?' + toQueryString(body),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
+    }).then(function (response) {
+      console.log(response.data)
+      if (response.status == 200 && response.data.status == 1) {
+        resolve(response.data)
+      } else {
+        if (reject) {
+          reject(error)
+        }
+      }
+    }).catch(function (error) {
+      console.log(error);
+      if (reject) {
+        reject(error)
+      }
     })
+  }
+
+  if (method.toUpperCase() == 'POST') {
+    axios({
+      method: 'post',
+      url: HOST + '/api/' + url,
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      data: toQueryString(body)
+    }).then(function (response) {
+      console.log(response.data)
+      if (response.status == 200 && response.data.status == 1) {
+        resolve(response.data)
+      } else {
+        if (reject) {
+          reject(error)
+        }
+      }
+    }).catch(function (error) {
+      console.log(error);
+      if (reject) {
+        reject(error)
+      }
+    })
+  }
+
 }
 function toQueryString(obj) {
   return obj ? Object.keys(obj).sort().map(function (key) {
-    var val = obj[key]
-    if (Array.isArray(val)) {
-      return val.sort().map(function (val2) {
-        return (key) + '=' + (val2)
-      }).join('&')
-    }
-    return (key) + '=' + (val)
-  }).join('&') : ''
+      var val = obj[key]
+      if (Array.isArray(val)) {
+        return val.sort().map(function (val2) {
+          return (key) + '=' + (val2)
+        }).join('&')
+      }
+      return (key) + '=' + (val)
+    }).join('&') : ''
 }
 
 
@@ -45,7 +75,7 @@ export function PostRequestData(url, body, resolve, reject) {
       'Content-Type': 'application/x-www-form-urlencoded',
     },
     method: 'POST',
-    body:  toQueryString(body),
+    body: toQueryString(body),
   })
     .then((response) => {
       return response.json();
@@ -59,8 +89,8 @@ export function PostRequestData(url, body, resolve, reject) {
 }
 
 export function GetRequestData(url, body, resolve, reject) {
-  console.log(HOST + url +'?'+ toQueryString(body));
-  fetch(HOST + url +'?'+ toQueryString(body), {
+  console.log(HOST + url + '?' + toQueryString(body));
+  fetch(HOST + url + '?' + toQueryString(body), {
     method: 'GET',
   }).then((response) => {
     return response.json();

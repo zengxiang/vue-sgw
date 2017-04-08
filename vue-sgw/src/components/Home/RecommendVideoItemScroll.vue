@@ -47,7 +47,7 @@
         let self = this;
         RequestData('get', 'course/listtui.json', {}, function (responseData) {
           responseData.data.map(function (item) {
-            item.cover = responseData.imageServer + item.cover;
+            item.cover = responseData.fileServer + item.cover;
             item.priceText = item.price > 0 ? '付费' : '免费';
           })
           self.items = responseData.data;
