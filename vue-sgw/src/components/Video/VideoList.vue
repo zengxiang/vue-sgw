@@ -5,7 +5,7 @@
         v-infinite-scroll="loadBottom"
         infinite-scroll-disabled="allLoaded"
         infinite-scroll-distance="30">
-        <div v-for="item in dataArray">
+        <div v-for="item in dataArray"  @click="doPushDetail">
           <VideoListItem :item='item'></VideoListItem>
         </div>
       </div>
@@ -43,6 +43,10 @@
         // 加载更多数据
         this.page++
         this.GetListData();
+      },
+      doPushDetail:function () {
+//        alert('222');
+        this.$router.push({ path: 'VideoDetailVC', query: { plan: 'private' }});
       },
       GetListData: function () {
         if (this.page == 1) {

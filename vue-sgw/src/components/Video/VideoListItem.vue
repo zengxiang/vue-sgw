@@ -1,5 +1,5 @@
 <template>
-    <div style="padding: 10px;display: flex">
+    <div style="padding: 10px;display: flex" >
       <SmallImage v-bind:imgUrl='item.cover' :ImageWidth=135 :ImageHeight=80></SmallImage>
       <div style="padding: 0px 0px 0px 5px">
         <p>{{item.name}}</p>
